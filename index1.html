@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+
+  </head>
+  <body>
+    <div id="app">
+      <div class='loader df aic jcc'>
+        <div>
+          <h1>Loading</h1>
+          <h2 class='loader--text'>0%</h2>
+        </div>
+      </div>
+      <div class='demo-wrapper'>
+        <header class='df aic jcc'>
+          <div>
+            <h1>African </h1>
+            <h2>Inspiration</h2>
+          </div>
+        </header>
+        <section class='demo-text'>
+          <div class='wrapper text'>
+            INSPIRATION
+          </div>
+        </section>
+        <section class='demo-gallery'>
+          <ul class='wrapper'>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=157' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=56' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=158' width='1240'>
+            </li>
+          </ul>
+        </section>
+        <section class='demo-gallery'>
+          <ul class='wrapper'>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=71' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=3' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=119' width='1240'>
+            </li>
+          </ul>
+        </section>
+        <section class='demo-text'>
+          <div class='wrapper text'>
+            AFRICAN
+          </div>
+        </section>
+      
+        <section class='demo-gallery'>
+          <ul class='wrapper'>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=30' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=112' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=6' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=142' width='1240'>
+            </li>
+          </ul>
+        </section>
+        <section class='demo-text'>
+          <div class='wrapper text'>
+            INSPIRATION
+          </div>
+        </section>
+      
+        <section class='demo-gallery'>
+          <ul class='wrapper'>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=199' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=159' width='1240'>
+            </li>
+            <li>
+              <img height='874' src='https://source.unsplash.com/random/1240x874?sig=5' width='1240'>
+            </li>
+          </ul>
+        </section>
+        <section class='demo-text'>
+          <div class='wrapper text'>
+            AFRICAN
+          </div>
+        </section>
+        <div class="wrapper2">
+          <div class="card-container">
+              <div class="plus-icon"><ion-icon name="add-sharp"></ion-icon></div>
+              <div class="card-icon"><ion-icon name="globe-outline"></ion-icon>
+              </div>
+              <div class="preview-text">AFRICA</div>
+              <div class="card-circle">
+              </div>
+              <div class="text-wrapper">&mdash; AFRICA &mdash; AFRICA &mdash; AFRICA<a href="utimatelist.html"> &mdash; AFRICA</a></div>
+          </div>
+          <div class="card-container">
+            <div class="plus-icon"><ion-icon name="add-sharp"></ion-icon></div>
+            <div class="card-icon"><ion-icon name="globe-outline"></ion-icon>
+            </div>
+            <div class="preview-text">Create by</div>
+            <div class="card-circle">
+            </div>
+            <div class="text-wrapper">&mdash; AFRICA &mdash; AFRICA &mdash; AFRICA<a href="page2.html"> &mdash; AFRICA</a></div>
+        </div>
+          
+      </div>
+        <footer class='df aic jcc'>
+          <p>Images from <a href="https://unsplash.com/">Unsplash</a></p>
+        </footer>
+        
+      </div>
+        
+    </div>
+  </template>
+  
+  <script>
+  import { gsap } from 'gsap'
+  export default {
+    mounted: function() {
+      this.scrollAnimation();
+    },
+    methods: {
+      scrollAnimation() {
+        gsap.to(".box", {
+  scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
+  x: 500
+})
+      },
+    }
+  };
+
+  </script>
+  <style>
+  h2 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  </style>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    
+  </body>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script><script  src="./script.js"></script>
+  
+</html>
